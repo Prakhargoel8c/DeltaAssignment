@@ -1,0 +1,21 @@
+{
+  "teamMembers": [
+    {
+      "name": "Prakhar Goel",
+      "company": "test",
+      "status": "Active",
+      "notes": "ew",
+      "lastUpdated": "2022-02-26",
+      "id": "3147c908-c8c4-4192-890f-8733a0c46cfe"
+    },
+    {
+      "name": "James",
+      "company": "Rivolta",
+      "status": "InActive",
+      "notes": "aws",
+      "lastUpdated": "2022-02-26",
+      "id": "74fbd1ee-3498-4225-ae80-dedeac76c59d"
+    }
+  ],
+  "loading": false
+}

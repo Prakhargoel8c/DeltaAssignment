@@ -1,0 +1,20 @@
+.loginContainer {
+  min-height: 500px;
+}
+.loginContent {
+  margin-top: 100px;
+  min-height: 300px;
+  border: 2px black solid;
+  text-align: center;
+}
+.loginFormContainer {
+  margin-top: 6%;
+}
+.loginSubmit .ant-form-item-control-input-content .submitBtn {
+  margin-right: 15%;
+}
+.error {
+  color: red;
+  font-weight: 700;
+  text-align: right;
+}

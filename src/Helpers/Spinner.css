@@ -1,0 +1,8 @@
+.overlaySpinner .modal-content {
+  border: 0px;
+  background-color: transparent;
+}
+.spinner {
+  font-size: 50px;
+  color: #1890ff;
+}
