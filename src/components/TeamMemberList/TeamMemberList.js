@@ -3,7 +3,6 @@ import { useSelector, useDispatch } from 'react-redux';
 import { DeleteFilled } from '@ant-design/icons';
 import { Modal } from 'antd';
 import { deleteTeamMember } from '../../store/Actions/TeamMember';
-import { toast } from 'react-toastify';
 const TeamMemberList = () => {
   const teamMembers = useSelector((state) => state.teamMemberReducer.teamMembers);
   const selectedCompanies = useSelector((state) => state.companyReducer.selectedCompanies);
@@ -13,7 +12,6 @@ const TeamMemberList = () => {
     confirm({
       onOk: () => {
         dispatch(deleteTeamMember(teamMembers.filter(({ id }) => id !== teamMember.id)));
-        toast.info('Team Member Deleted Successfully', { position: 'top-right' });
       },
       title: 'Are you sure want delete this team member',
       okText: 'Yes',

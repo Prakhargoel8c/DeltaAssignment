@@ -6,7 +6,6 @@ import { addTeamMember } from '../store/Actions/TeamMember';
 import { addComapny } from '../store/Actions/Company';
 import './AddTeamMember.css';
 import { v4 as uuidv4 } from 'uuid';
-import { toast } from 'react-toastify';
 
 const AddTeamMember = ({ showAddMembers, setShowAddMembers }) => {
   const [form] = Form.useForm();
@@ -19,7 +18,6 @@ const AddTeamMember = ({ showAddMembers, setShowAddMembers }) => {
   };
   const addTeamMemberSubmit = (teamMember) => {
     dispatch(addTeamMember({ ...teamMember, lastUpdated: new Date().toJSON().slice(0, 10), id: uuidv4() }));
-    toast.info('Team Member Added Successfully', { position: 'top-right' });
     if (!companies.includes(teamMember.company)) {
       dispatch(addComapny(teamMember.company));
     }
